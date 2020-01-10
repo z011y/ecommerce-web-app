@@ -14,9 +14,7 @@ function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
-        <Layout>
-          <p>this is a child component</p>
-        </Layout>
+        <Layout></Layout>
       </BrowserRouter>
     </Provider>,
     document.querySelector(".app-wrapper")
