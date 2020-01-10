@@ -1,0 +1,9 @@
+# nodejs
+node-modules/
+npm-debug.log
+yarn-error.log
+
+# project
+
+dist/
+env.js
