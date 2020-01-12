@@ -9,10 +9,14 @@ class SignIn extends Component {
     super();
   }
 
+  onSubmit = fields => {
+    console.log(fields);
+  };
+
   render() {
     return (
       <div className="sign-in">
-        <SignInForm className="sign-in__form" />
+        <SignInForm onSubmit={this.onSubmit} className="sign-in__form" />
       </div>
     );
   }
