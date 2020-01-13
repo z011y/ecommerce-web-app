@@ -10,11 +10,16 @@
     grid-template-rows:
       [email-s] 64px [email-e password-s] 64px [password-e] minmax(20px, 289px)
       [line-s] 2px [line-e login-s] 38px [login-e];
+    grid-template-columns: 1fr;
   }
 }
 
 .sign-in-form {
   height: calc(100vh - 350px);
+  & > * {
+    grid-column: 1/-1;
+  }
+
   &__email {
     grid-row: email-s/email-e;
   }
@@ -24,13 +29,20 @@
     grid-row: password-s/password-e;
   }
 
+  &__line {
+    border-top: 1px solid #ccc;
+    grid-row: line-s/line-e;
+    grid-column: 1/-1;
+  }
+
   &__login {
     grid-row: login-s/login-e;
     margin-top: 39px;
   }
 
-  &__line {
-    border-top: 1px solid #ccc;
-    grid-row: line-s/line-e;
+  &__details {
+    grid-row: 1/-1;
+    justify-self: end;
+    align-self: start;
   }
 }
