@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Logo from "../../../static/assets/4x/bird-logo.png";
+
 class Header extends Component {
   constructor() {
     super();
@@ -8,7 +10,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <img src="http://via.placeholder.com/50x50" />
+        <img src={Logo} />
       </div>
     );
   }

@@ -8,16 +8,25 @@
   &__form {
     display: grid;
     grid-template-rows:
-      [email-s] 64px [email-e password-s] 64px [password-e] minmax(20px, 289px)
-      [line-s] 2px [line-e login-s] 38px [login-e];
-    grid-template-columns: 1fr;
+      [name-s] 64px [name-e email-s] 64px [email-e space-s] 35px [space-e password-s] 64px [password-e confirm-s] 64px [confirm-e] minmax(
+        20px,
+        289px
+      )
+      [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+    grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e create-s] 1fr [create-e] 1fr;
+    grid-row-gap: 15px;
   }
 }
 
 .sign-up-form {
-  height: calc(100vh - 350px);
+  height: 500px;
+  margin-bottom: 50px;
   & > * {
     grid-column: 1/-1;
+  }
+
+  &__name {
+    grid-row: name-s/name-s;
   }
 
   &__email {
@@ -25,19 +34,27 @@
   }
 
   &__password {
-    margin-top: 15px;
     grid-row: password-s/password-e;
   }
 
+  &__confirm {
+    grid-row: confirm-s/confirm-e;
+  }
+
   &__line {
-    border-top: 1px solid #ccc;
+    border-top: 3px solid $light-grey;
     grid-row: line-s/line-e;
     grid-column: 1/-1;
   }
 
   &__login {
-    grid-row: login-s/login-e;
-    margin-top: 39px;
+    grid-row: buttons-s/buttons-e;
+    grid-column: create-s/create-e;
+  }
+
+  &__back {
+    grid-column: back-s/back-e;
+    grid-row: buttons-s/buttons-e;
   }
 
   &__details {

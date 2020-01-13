@@ -2,12 +2,19 @@
   grid-row: header-s/header-e;
   grid-column: 1/-1;
   display: grid;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+
+  img {
+    height: 75%;
+    margin-left: 10px;
+  }
 }
 
 .navbar {
   grid-row: navbar-s/navbar-e;
   grid-column: 1/-1;
-  background-color: #333333;
+  background-color: $purple;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border: none;
 }

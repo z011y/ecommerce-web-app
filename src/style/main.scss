@@ -1,3 +1,4 @@
+@import "variables";
 @import "layout";
 @import "header-nav";
 @import "auth/signin";
@@ -22,7 +23,7 @@ html {
 body {
   overflow-x: hidden;
   font-weight: normal;
-  color: #808080;
+  color: $dark-grey;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

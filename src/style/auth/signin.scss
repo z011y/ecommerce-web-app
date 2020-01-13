@@ -30,7 +30,7 @@
   }
 
   &__line {
-    border-top: 1px solid #ccc;
+    border-top: 3px solid $light-grey;
     grid-row: line-s/line-e;
     grid-column: 1/-1;
   }

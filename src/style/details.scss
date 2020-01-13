@@ -1,10 +1,12 @@
 .details {
   display: grid;
   grid-row-gap: 13px;
+  // background-color: $light-grey;
+  padding: 20px;
 
   &__title {
     padding-bottom: 7px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 3px solid $light-grey;
     font-size: 14px;
     font-weight: 600;
   }
@@ -16,7 +18,13 @@
 
     & > * {
       text-decoration: underline;
+      text-decoration-color: $purple;
       cursor: pointer;
     }
+  }
+
+  &__item {
+    text-decoration: none;
+    cursor: auto;
   }
 }
