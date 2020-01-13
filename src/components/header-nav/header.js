@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Logo from "../../../static/assets/4x/bird-logo.png";
 
+import { connect } from "react-redux";
+
 class Header extends Component {
   constructor() {
     super();
@@ -11,9 +13,29 @@ class Header extends Component {
     return (
       <div className="header">
         <img src={Logo} />
+        <div className="header__links">
+          {this.props.headerLinks.map((link, index) => {
+            return (
+              <a
+                className="header__link"
+                key={index}
+                onClick={() => console.log("tryna swith tab")}
+              ></a>
+            );
+          })}
+        </div>
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  const { headerLinks } = state.headerNavbar;
+  return {
+    headerLinks
+  };
+}
+
+Header = connect(mapStateToProps)(Header);
 
 export default Header;
