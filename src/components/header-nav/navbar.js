@@ -13,10 +13,12 @@ class Navbar extends Component {
         {this.props.navbarLinks.map((link, index) => {
           return (
             <a
-              className="navbar__link"
+              className={`navbar__link ${link.active ? "purple-text" : ""}`}
               key={index}
               onClick={() => console.log("tryna swith tab")}
-            ></a>
+            >
+              {link.title}
+            </a>
           );
         })}
       </div>

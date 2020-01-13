@@ -12,7 +12,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <img src={Logo} />
+        <img className="header__img" src={Logo} />
         <div className="header__links">
           {this.props.headerLinks.map((link, index) => {
             return (
@@ -20,7 +20,9 @@ class Header extends Component {
                 className="header__link"
                 key={index}
                 onClick={() => console.log("tryna swith tab")}
-              ></a>
+              >
+                {link.title}
+              </a>
             );
           })}
         </div>

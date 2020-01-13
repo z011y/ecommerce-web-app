@@ -2,8 +2,35 @@
   grid-row: header-s/header-e;
   grid-column: 1/-1;
   display: grid;
-  justify-content: start;
   align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: [img-s] 1fr [img-e links-s] 1fr [links-e];
+  border-bottom: 3px solid $purple;
+
+  &__img {
+    grid-column: img-s/img-e;
+    grid-row: 1/-1;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-rows: [s] 1fr [e];
+    grid-column-gap: 47px;
+
+    margin-right: 47px;
+    grid-column-gap: 30px;
+    grid-column: links-s/links-e;
+    grid-row: 1/-1;
+    justify-content: end;
+
+    a {
+      font-size: 18px;
+      font-family: "Paytone One";
+    }
+    & > * {
+      grid-row: s/e;
+    }
+  }
 
   img {
     height: 75%;
@@ -14,7 +41,31 @@
 .navbar {
   grid-row: navbar-s/navbar-e;
   grid-column: 1/-1;
-  background-color: $purple;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: $light-grey;
+  // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border: none;
+
+  display: grid;
+  grid-template-rows: [s] 1fr [e];
+  align-items: center;
+
+  justify-content: center;
+  grid-column-gap: 40px;
+  font-size: 18px;
+
+  a {
+    height: 100%;
+    padding: 0px 20px;
+    line-height: 50px;
+    font-family: "Paytone One";
+  }
+
+  .purple-text {
+    color: white !important;
+    background-color: $purple;
+  }
+
+  & > * {
+    grid-row: s/e;
+  }
 }
