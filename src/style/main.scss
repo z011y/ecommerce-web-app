@@ -3,6 +3,7 @@
 @import "auth/signin";
 @import "auth/signup";
 @import "page-title";
+@import "form-fields";
 
 html {
   font-size: 62.5%; // 1rem is 10px
@@ -14,12 +15,13 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "montserrat";
+  font-family: "Open Sans";
 }
 
 body {
   overflow-x: hidden;
   font-weight: normal;
+  color: #808080;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

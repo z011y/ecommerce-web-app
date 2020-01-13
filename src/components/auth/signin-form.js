@@ -29,6 +29,7 @@ class SignInForm extends Component {
           placeholder="Password"
           name="password"
         />
+        <div className="sign-in-form__line"></div>
         <Field
           className="sign-in-form__login"
           component={FormButton}
