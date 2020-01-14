@@ -18,13 +18,13 @@ class Account extends Component {
       {
         _id: 1,
         title: "Account Information",
-        active: false,
+        active: true,
         component: <AccountInformation />
       }
     ];
 
     this.props.setHeaderLinks([]);
-    this.props.setNavbarLinks([]);
+    this.props.setNavbarLinks(navbarLinks);
   }
 
   renderContent() {
@@ -45,7 +45,7 @@ class Account extends Component {
 
 function mapStateToProps(state) {
   const { headerLinks, navbarLinks } = state.headerNavbar;
-  return { headerLink, navbarLink };
+  return { headerLinks, navbarLinks };
 }
 
 Account = connect(

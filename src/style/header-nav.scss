@@ -41,7 +41,7 @@
 .navbar {
   grid-row: navbar-s/navbar-e;
   grid-column: 1/-1;
-  background-color: $light-grey;
+  background-color: white;
   // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border: none;
 
@@ -58,6 +58,9 @@
     padding: 0px 20px;
     line-height: 50px;
     font-family: "Paytone One";
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .purple-text {
