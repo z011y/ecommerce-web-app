@@ -4,6 +4,8 @@ import Logo from "../../../static/assets/4x/bird-logo.png";
 
 import { connect } from "react-redux";
 
+import history from "../../history";
+
 class Header extends Component {
   constructor() {
     super();
@@ -12,14 +14,19 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <img className="header__img" src={Logo} />
+        <img
+          className="header__img"
+          src={Logo}
+          onClick={() => history.push("/")}
+        />
+
         <div className="header__links">
           {this.props.headerLinks.map((link, index) => {
             return (
               <a
                 className="header__link"
                 key={index}
-                onClick={() => console.log("tryna swith tab")}
+                onClick={() => history.push(link.path)}
               >
                 {link.title}
               </a>

@@ -5,9 +5,17 @@ import { reduxForm, Field } from "redux-form";
 import SignInForm from "./signin-form";
 import PageTitle from "../page-title";
 
+import { connect } from "react-redux";
+import * as actions from "../../actions";
+
 class SignIn extends Component {
   constructor() {
     super();
+  }
+
+  componentDidMount() {
+    this.props.setHeaderLinks([]);
+    this.props.setNavbarLinks([]);
   }
 
   onSubmit = fields => {
@@ -23,5 +31,10 @@ class SignIn extends Component {
     );
   }
 }
+
+SingIn = connect(
+  null,
+  actions
+)(SignIn);
 
 export default SignIn;

@@ -5,9 +5,17 @@ import { reduxForm, Field } from "redux-form";
 import SignUpForm from "./signup-form";
 import PageTitle from "../page-title";
 
+import { connect } from "react-redux";
+import * as actions from "../../actions";
+
 class SignUp extends Component {
   constructor() {
     super();
+  }
+
+  componentDidMount() {
+    this.props.setHeaderLinks([]);
+    this.props.setNavbarLinks([]);
   }
 
   onSubmit = fields => {
@@ -23,5 +31,10 @@ class SignUp extends Component {
     );
   }
 }
+
+SignUp = connect(
+  null,
+  actions
+)(SignUp);
 
 export default SignUp;
