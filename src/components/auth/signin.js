@@ -32,7 +32,7 @@ class SignIn extends Component {
   }
 }
 
-SingIn = connect(
+SignIn = connect(
   null,
   actions
 )(SignIn);
