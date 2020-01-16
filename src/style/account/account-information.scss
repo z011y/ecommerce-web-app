@@ -1,14 +1,20 @@
 .account-information {
   grid-row: content-s/content-e;
   grid-column: s/e;
+  margin-bottom: 50px;
 
   &__page-title {
   }
 
   &__form {
     display: grid;
-    grid-template-rows: [name-s street-address-s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e zip-code-s state-s] 64px [zip-code-e state-e];
+    grid-template-rows:
+      [name-s street-address-s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e zip-code-s state-s change-password-s current-s] 64px [zip-code-e state-e change-password-e current-e new-s] 64px [new-e confirm-s] 64px [confirm-e]
+      20px
+      [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+
     grid-template-columns: [s] 1fr [m] 1fr [e];
+
     grid-row-gap: 20px;
   }
 }
@@ -49,6 +55,41 @@
   }
 
   &__change-password {
-    transform: translateY(50px);
+    margin-top: 18px;
+  }
+
+  &__change-password,
+  &__current {
+    grid-column: s/m;
+    grid-row: change-password-s/change-password-e;
+  }
+
+  &__new {
+    grid-row: new-s/new-e;
+  }
+
+  &__confirm {
+    grid-row: confirm-s/confirm-e;
+  }
+
+  &__line {
+    grid-row: line-s/line-e;
+    border-top: 3px solid $light-grey;
+    grid-column: s/e;
+  }
+
+  &__update-information {
+    grid-column: s/m;
+    transform: translateX(200px);
+    grid-row: buttons-s/buttons-e;
+
+    button {
+      width: 225px;
+    }
+  }
+
+  &__cancel {
+    grid-column: s/m;
+    grid-row: buttons-s/buttons-e;
   }
 }

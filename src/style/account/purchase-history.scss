@@ -98,3 +98,11 @@
     color: $dark-grey;
   }
 }
+
+.purchase-detail__total {
+  .purchase-detail-label__value {
+    color: $purple;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
