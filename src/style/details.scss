@@ -7,18 +7,32 @@
   &__title {
     padding-bottom: 7px;
     border-bottom: 3px solid $light-grey;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   &__links {
     display: grid;
     grid-row-gap: 10px;
     font-size: 14px;
+    color: $purple;
+    font-weight: 700;
+
+    //   a {
+    //     font-size: 14px;
+    //     text-decoration: none;
+    //     box-shadow: inset 0 -8px 0 #f3e5f5;
+    //     transition: 0.2s ease-in-out;
+    //     padding: 2px;
+    //
+    //     &:hover {
+    //       box-shadow: none;
+    //       background: #e1bee7;
+    //     }
+    //   }
+    // }
 
     & > * {
-      text-decoration: underline;
-      text-decoration-color: $purple;
       cursor: pointer;
     }
   }
