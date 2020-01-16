@@ -30,11 +30,10 @@
   &__button {
     height: 40px;
     width: 180px;
-    background-color: $blue;
     font-size: 18px;
-    color: white;
+    color: $blue;
     font-family: "Paytone One";
-    border: none;
+    border: 3px solid $blue;
     transition: 0.2s ease-in-out;
 
     &:focus {
@@ -47,7 +46,8 @@
     }
   }
   &__grey-button {
-    background-color: $dark-grey !important;
+    border-color: $dark-grey !important;
+    color: $dark-grey;
     width: 137px;
   }
 }
