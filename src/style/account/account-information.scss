@@ -1,0 +1,50 @@
+.account-information {
+  grid-row: content-s/content-e;
+  grid-column: s/e;
+
+  &__page-title {
+  }
+
+  &__form {
+    display: grid;
+    grid-template-rows: [name-s street-address-s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e zip-code-s state-s] 64px [zip-code-e state-e];
+    grid-template-columns: [s] 1fr [m] 1fr [e];
+    grid-row-gap: 20px;
+  }
+}
+
+.account-information-form {
+  &__name {
+    grid-column: s/m;
+    grid-row: name-s/name-e;
+  }
+
+  &__email {
+    grid-column: s/m;
+    grid-row: email-s/email-e;
+  }
+  &__street-address {
+    grid-column: m/e;
+    grid-row: street-address-s/street-address-e;
+  }
+  &__city {
+    grid-column: m/e;
+    grid-row: city-s/city-e;
+  }
+  &__state {
+    grid-column: m/e;
+    grid-row: state-s/state-e;
+  }
+  &__zip-code {
+    grid-column: m/e;
+    grid-row: zip-code-s/zip-code-e;
+    transform: translateX(226px);
+  }
+
+  &__state,
+  &__zip-code {
+    input {
+      width: 200px;
+    }
+  }
+}
