@@ -85,15 +85,15 @@ class AccountInformationForm extends Component {
           placeholder="Confirm Password"
           name="confirm"
         />
-        <div className="account-information-form__line"></div>
+        <div className="account-information-form__line"></div> */}
         <Field
-          className="account-information-form__login"
+          className="account-information-form__change-password"
           component={FormButton}
-          onClick={() => history.push("/account")}
-          type="submit"
-          title="Login"
-          name="login"
-        /> */}
+          onClick={() => console.log("tryna show passwords")}
+          type="button"
+          title="Change Password"
+          name="change-password"
+        />
       </form>
     );
   }
