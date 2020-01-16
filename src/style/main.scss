@@ -1,14 +1,21 @@
 @import "variables";
 @import "layout";
 @import "header-nav";
-@import "auth/signin";
-@import "auth/signup";
 @import "page-title";
 @import "form-fields";
 @import "details";
+
+// AUTH
+@import "auth/signin";
+@import "auth/signup";
+
+// ACCOUNT
 @import "account/purchase-history";
 @import "account/account-information";
 @import "account/account";
+
+// SHOP
+@import "shop/shop";
 
 html {
   font-size: 62.5%; // 1rem is 10px
