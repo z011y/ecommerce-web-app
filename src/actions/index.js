@@ -6,7 +6,7 @@ import {
 
 import { fetchUserPurchases, setPurchaseDetail } from "./user";
 
-import { fetchShopCategories } from "./shop";
+import { fetchShopCategories, fetchShopProducts } from "./shop";
 
 export {
   setHeaderLinks,
@@ -14,5 +14,6 @@ export {
   changeNavbarActive,
   fetchUserPurchases,
   setPurchaseDetail,
-  fetchShopCategories
+  fetchShopCategories,
+  fetchShopProducts
 };
