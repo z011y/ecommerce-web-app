@@ -18,6 +18,11 @@
 @import "shop/shop";
 @import "shop/shop-search-bar";
 
+// QUANTITY
+@import "quantity";
+
+@import "purple-price-tag";
+
 html {
   font-size: 62.5%; // 1rem is 10px
 }
