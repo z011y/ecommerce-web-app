@@ -1,0 +1,42 @@
+.shop-product {
+  height: 314px;
+  width: 240px;
+  background-color: white;
+  box-shadow: 0 2px 20px 0 $light-grey;
+
+  &__title {
+    font-family: "Paytone One";
+    font-size: 18px;
+    font-weight: 400;
+    color: $dark-grey;
+  }
+
+  &__description {
+    font-size: 13px;
+    color: $dark-grey;
+  }
+
+  &__add-to-cart {
+    height: 40px;
+    width: 97px;
+    color: white;
+    background-color: $purple;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Paytone One";
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: rotate(5deg);
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
