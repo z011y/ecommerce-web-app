@@ -1,8 +1,37 @@
 .quantity {
-  &__count {
-  }
-  &__plus {
-  }
+  display: grid;
+  grid-template-rows: [s] 21px [m] 21px [e];
+  grid-template-columns: [s] 65px [m] 29px [e];
+
+  &__count,
+  &__plus,
   &__minus {
+    border: 3px solid $light-grey;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 24px;
+    width: 29px;
+    grid-column: m/e;
+  }
+  &__count {
+    grid-row: s/e;
+    grid-column: s/m;
+    height: 42px;
+    width: 65px;
+    font-size: 20px;
+    color: $dark-grey;
+    font-weight: 700;
+    border-right: 0px;
+  }
+
+  &__plus {
+    grid-row: s/m;
+    border-bottom: 0px;
+  }
+
+  &__minus {
+    grid-row: m/e;
+    border-top: 0px;
   }
 }
