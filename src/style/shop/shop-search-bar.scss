@@ -1,0 +1,39 @@
+.shop-search-bar {
+  input {
+    height: 40px;
+    border: 3px solid $light-grey;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: $dark-grey;
+
+    &:placeholder {
+      color: $dark-grey;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: $blue;
+    }
+  }
+}
+
+.search-bar-grid {
+  display: grid;
+  grid-template-rows: [s] 1fr [e];
+  grid-template-columns: 20px [s] 1fr [e];
+
+  &__icon {
+    grid-row: s/e;
+    grid-column: s/e;
+    font-size: 18px;
+    align-self: center;
+    z-index: 100;
+  }
+  &__input {
+    grid-row: s/e;
+    grid-column: 1 / e;
+    padding-left: 50px;
+  }
+}

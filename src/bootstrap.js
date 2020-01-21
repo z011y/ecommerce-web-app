@@ -5,6 +5,8 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { Router, Switch, Route } from "react-router-dom";
 import reducers from "./reducers";
 
+import Icons from "./helpers/icons";
+
 const createStoreWithMiddleware = applyMiddleware()(
   compose(
     (window.devToolsExtension ? window.devToolsExtension() : f => f)(
