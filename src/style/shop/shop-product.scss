@@ -1,19 +1,87 @@
 .shop-product {
+  // PLACE FRONT AND BACK ON TOP OF EACH OTHER
+  display: grid;
+  grid-template-rows: 1/-1;
+  grid-template-columns: 1/-1;
+
+  & > * {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+  }
+  // CARD FLIP
+  perspective: 150rem;
+  -moz-perspective: 15rem;
+  &__front,
+  &__back {
+    backface-visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  &__back {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__back {
+    transform: rotateY(0deg);
+  }
+}
+
+.shop-product__front {
   height: 314px;
+  display: grid;
+  justify-content: center;
+  align-content: space-around;
+
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    color: $dark-grey;
+    font-size: 20px;
+    font-family: "Paytone One";
+    text-align: center;
+  }
+}
+
+.shop-product__back {
+  height: 280px;
   width: 240px;
   background-color: white;
   box-shadow: 0 2px 20px 0 $light-grey;
+
+  display: grid;
+  grid-template-rows: [title-s] 30px [title-e description-s] 1fr [description-e price-s] 25px [price-e footer-s] 65px [footer-e];
+  grid-template-columns: [s] 1fr [e];
+  justify-items: start;
+  grid-row-gap: 10px;
+  padding: 20px;
+
+  & > * {
+    grid-column: s/e;
+  }
 
   &__title {
     font-family: "Paytone One";
     font-size: 18px;
     font-weight: 400;
     color: $dark-grey;
+    grid-row: title-s/title-e;
   }
 
   &__description {
     font-size: 13px;
     color: $dark-grey;
+    grid-row: description-s/desription-e;
+  }
+
+  &__price {
+    grid-row: price-s/price-e;
+  }
+
+  &__quantity {
+    grid-row: footer-s/footer-e;
   }
 
   &__add-to-cart {
@@ -27,8 +95,10 @@
 
     display: grid;
     justify-items: center;
+    justify-self: end;
     align-items: center;
     transition: 0.2s ease-in-out;
+    grid-row: footer-s/footer-e;
 
     &:hover {
       transform: rotate(5deg);

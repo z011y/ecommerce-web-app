@@ -75,6 +75,22 @@ export function fetchShopProducts() {
         description: "The Eagle style poncho",
         price: 24.99,
         belongsTo: [0, 2]
+      },
+
+      {
+        _id: 4,
+        title: "Hummingbird",
+        description: "The Hummingbird style poncho",
+        price: 24.99,
+        belongsTo: [0, 2]
+      },
+
+      {
+        _id: 5,
+        title: "Falcon",
+        description: "The Falcon style poncho",
+        price: 24.99,
+        belongsTo: [0, 2]
       }
     ]
   };

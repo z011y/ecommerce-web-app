@@ -6,6 +6,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: [img-s] 1fr [img-e links-s] 1fr [links-e];
   border-bottom: 3px solid $purple;
+  box-shadow: 0 2px 20px 0 $light-grey;
 
   &__img {
     grid-column: img-s/img-e;
@@ -26,6 +27,11 @@
     a {
       font-size: 18px;
       font-family: "Paytone One";
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+      }
     }
     & > * {
       grid-row: s/e;

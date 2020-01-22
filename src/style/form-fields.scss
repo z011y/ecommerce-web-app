@@ -44,6 +44,10 @@
       transform: rotate(5deg);
       cursor: pointer;
     }
+
+    &:active {
+      transform: scale(0.95);
+    }
   }
   &__grey-button {
     border-color: $dark-grey !important;
