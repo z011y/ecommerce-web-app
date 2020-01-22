@@ -28,30 +28,17 @@
 
 .form-button {
   &__button {
-    height: 40px;
     width: 180px;
-    font-size: 18px;
     color: $blue;
-    font-family: "Paytone One";
     border: 3px solid $blue;
-    transition: 0.2s ease-in-out;
-
-    &:focus {
-      outline: none;
-    }
-
-    &:hover {
-      transform: rotate(5deg);
-      cursor: pointer;
-    }
-
-    &:active {
-      transform: scale(0.95);
-    }
+    background-color: white;
+    @include btn();
   }
   &__grey-button {
     border-color: $dark-grey !important;
     color: $dark-grey;
+    background-color: white;
     width: 137px;
+    border: 3px solid $dark-grey;
   }
 }

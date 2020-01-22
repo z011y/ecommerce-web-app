@@ -45,3 +45,13 @@
     display: grid;
   }
 }
+
+.cart-footer {
+  &__checkout {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    @include btn();
+    width: 180px;
+  }
+}
