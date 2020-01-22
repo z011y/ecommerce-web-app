@@ -21,7 +21,7 @@ class Purchases extends Component {
             >
               <img
                 className="purchase__img"
-                src="http://via.placeholder.com/80x80"
+                src="../../../static/assets/poncho.jpg"
               />
             </a>
           );

@@ -22,6 +22,15 @@
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, 80px);
   width: 360px;
+
+  a {
+    &:hover {
+      cursor: pointer;
+    }
+    .purchase__img {
+      width: 100%;
+    }
+  }
 }
 
 .purchase-detail {
