@@ -33,4 +33,15 @@
 }
 
 .cart-content {
+  &__title {
+    font-size: 30px;
+    font-family: "Paytone One";
+  }
+
+  &__products {
+    display: grid;
+  }
+  &__footer {
+    display: grid;
+  }
 }
