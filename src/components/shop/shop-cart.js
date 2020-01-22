@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import CartProduct from "./cart-product";
+
 function CartButton({ className, icon }) {
   return (
     <div className={`${className} cart-button`}>
@@ -12,7 +14,7 @@ function CartButton({ className, icon }) {
 
 function CartContent({ className, products }) {
   let count = products.length;
-  let productsJSX = products.map(product => <h1 key={product}>{product}</h1>);
+  let productsJSX = products.map(product => <CartProduct key={product} />);
   return (
     <div className={`${className} cart-content`}>
       <div className="cart-content__title">Cart ({count})</div>
