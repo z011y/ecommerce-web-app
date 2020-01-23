@@ -51,6 +51,7 @@
     display: grid;
     overflow-y: scroll;
     padding-top: 50px;
+    grid-row-gap: 45px;
   }
   &__footer {
     grid-row: footer-s/footer-e;
@@ -94,5 +95,5 @@
 }
 
 .cart-product__image {
-  width: 25%;
+  width: 100%;
 }
