@@ -24,8 +24,10 @@
 
 // QUANTITY
 @import "quantity";
-
 @import "purple-price-tag";
+
+// ORDER
+@import "order/review";
 
 html {
   font-size: 62.5%; // 1rem is 10px
