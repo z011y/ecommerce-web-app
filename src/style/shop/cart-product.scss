@@ -5,7 +5,7 @@
   grid-template-columns:
     [s image-s] 130px [image-e] 34px [title-s quantity-s] 1fr [quantity-e] 20px [remove-s] 1fr [remove-e title-e price-s] 70px
     [price-e e];
-  align-items: end;
+  align-items: center;
   &__image {
     grid-row: s/e;
     grid-column: image-s/image-e;

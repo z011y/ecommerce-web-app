@@ -23,13 +23,14 @@
 }
 
 .cart-button {
-  background-color: $light-grey;
+  background-color: $purple;
   font-size: 28px;
   height: 40px;
   width: 76px;
   display: grid;
   justify-content: center;
   align-items: center;
+  color: white;
 
   &:hover {
     cursor: pointer;
