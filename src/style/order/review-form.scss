@@ -1,0 +1,23 @@
+.review-form {
+  &__products {
+    grid-column: 1/-1;
+  }
+  &__line {
+    grid-column: 1/-1;
+    grid-row: line-s/line-e;
+    border-top: 3px solid $light-grey;
+    margin-bottom: 24px;
+  }
+  &__back {
+    grid-column: back-s/back-e;
+    grid-row: buttons-s/buttons-e;
+  }
+  &__proceed {
+    grid-column: proceed-s/proceed-e;
+    grid-row: buttons-s/buttons-e;
+
+    .form-button__button {
+      width: 220px;
+    }
+  }
+}
