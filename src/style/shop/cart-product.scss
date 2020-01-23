@@ -14,6 +14,8 @@
     align-self: start;
     grid-row: s/m;
     grid-column: title-s/title-e;
+    font-size: 18px;
+    font-weight: 700;
   }
   &__quantity {
     grid-row: m/e;
@@ -23,6 +25,8 @@
     grid-row: m/e;
     grid-column: remove-s/remove-e;
     justify-self: start;
+    font-size: 14px;
+    text-decoration: underline;
   }
   &__price {
     align-self: center;
