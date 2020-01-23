@@ -1,4 +1,8 @@
-import { SET_USER_PURCHASES, SET_PURCHASE_DETAIL } from "./types";
+import {
+  SET_USER_PURCHASES,
+  SET_PURCHASE_DETAIL,
+  SET_CART_PRODUCTS
+} from "./types";
 
 export function setPurchaseDetail(_id) {
   return {
@@ -87,6 +91,58 @@ export function fetchUserPurchases() {
           name: "Jordan Hudgens",
           shippingAddress: "1234 West State St"
         }
+      }
+    ]
+  };
+}
+
+export function fetchCartProducts() {
+  return {
+    type: SET_CART_PRODUCTS,
+    payload: [
+      {
+        _id: 0,
+        product: {
+          _id: 0,
+          title: "Parrot",
+          description: "The Parrot style poncho",
+          price: 24.99,
+          belongsTo: [0, 1]
+        },
+        quantity: 2
+      },
+      {
+        _id: 1,
+        product: {
+          _id: 1,
+          title: "Quetzal",
+          description: "The Quetzal style poncho",
+          price: 24.99,
+          belongsTo: [0, 3]
+        },
+        quantity: 1
+      },
+      {
+        _id: 2,
+        product: {
+          _id: 2,
+          title: "Peacock",
+          description: "The Peacock style poncho",
+          price: 24.99,
+          belongsTo: [0, 1]
+        },
+        quantity: 3
+      },
+      {
+        _id: 3,
+        product: {
+          _id: 3,
+          title: "Eagle",
+          description: "The Eagle style poncho",
+          price: 24.99,
+          belongsTo: [0, 2]
+        },
+        quantity: 1
       }
     ]
   };

@@ -4,7 +4,11 @@ import {
   changeNavbarActive
 } from "./header-navbar";
 
-import { fetchUserPurchases, setPurchaseDetail } from "./user";
+import {
+  fetchUserPurchases,
+  setPurchaseDetail,
+  fetchCartProducts
+} from "./user";
 
 import {
   fetchShopCategories,
@@ -14,11 +18,15 @@ import {
 } from "./shop";
 
 export {
+  // HEADER NAVBAR
   setHeaderLinks,
   setNavbarLinks,
   changeNavbarActive,
+  // USER
   fetchUserPurchases,
   setPurchaseDetail,
+  fetchCartProducts,
+  // SHOP
   fetchShopCategories,
   fetchShopProducts,
   filterProductsWithCategoryId,
