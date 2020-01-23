@@ -5,11 +5,12 @@ import {
   faSearch,
   faMinus,
   faPlus,
-  faTimes
+  faTimes,
+  faShoppingCart
 } from "@fortawesome/free-solid-svg-icons";
 
 const Icons = () => {
-  return library.add(faSearch, faMinus, faPlus, faTimes);
+  return library.add(faSearch, faMinus, faPlus, faTimes, faShoppingCart);
 };
 
 export default Icons;
