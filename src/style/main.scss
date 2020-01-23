@@ -51,6 +51,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
+
+  ::selection {
+    background-color: $blue;
+  }
 }
 
 h1 {
