@@ -40,6 +40,24 @@ class ReviewForm extends Component {
           name="back"
           short={true}
         />
+        <div className="review-form__details review-details">
+          <div className="review-details__subtotal review-detail">
+            <div className="review-detail__title">Subtotal</div>
+            <div className="review-detail__price">$54.99</div>
+          </div>
+          <div className="review-details__tax review-detail">
+            <div className="review-detail__title">Tax</div>
+            <div className="review-detail__price">$3.16</div>
+          </div>
+          <div className="review-details__shipping review-detail">
+            <div className="review-detail__title">Shipping</div>
+            <div className="review-detail__price">$0.00</div>
+          </div>
+          <div className="review-details__total review-detail">
+            <div className="review-detail-purple__title">Total</div>
+            <div className="review-detail-purple__price">$58.15</div>
+          </div>
+        </div>
       </form>
     );
   }
