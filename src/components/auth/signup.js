@@ -9,10 +9,6 @@ import { connect } from "react-redux";
 import * as actions from "../../actions";
 
 class SignUp extends Component {
-  constructor() {
-    super();
-  }
-
   componentDidMount() {
     this.props.setHeaderLinks([]);
     this.props.setNavbarLinks([]);

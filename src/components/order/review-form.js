@@ -22,7 +22,7 @@ class ReviewForm extends Component {
         <Field
           className="review-form__proceed"
           component={FormButton}
-          onClick={() => history.push("/signin")}
+          onClick={() => history.push("/information/address")}
           type="submit"
           title="Proceed to Checkout"
           name="proceed"

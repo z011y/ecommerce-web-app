@@ -8,10 +8,6 @@ import Details from "../details";
 import history from "../../history";
 
 class SignInForm extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const { className, handleSubmit } = this.props;
     const links = [
