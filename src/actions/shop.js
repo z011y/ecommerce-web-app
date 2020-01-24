@@ -53,28 +53,32 @@ export function fetchShopProducts() {
         title: "Parrot",
         description: "The Parrot style poncho",
         price: 24.99,
-        belongsTo: [0, 1]
+        belongsTo: [0, 1],
+        imageUrl: "https://via.placeholder.com/80x80"
       },
       {
         _id: 1,
         title: "Quetzal",
         description: "The Quetzal style poncho",
         price: 24.99,
-        belongsTo: [0, 3]
+        belongsTo: [0, 3],
+        imageUrl: "https://via.placeholder.com/80x80"
       },
       {
         _id: 2,
         title: "Peacock",
         description: "The Peacock style poncho",
         price: 24.99,
-        belongsTo: [0, 1]
+        belongsTo: [0, 1],
+        imageUrl: "https://via.placeholder.com/80x80"
       },
       {
         _id: 3,
         title: "Eagle",
         description: "The Eagle style poncho",
         price: 24.99,
-        belongsTo: [0, 2]
+        belongsTo: [0, 2],
+        imageUrl: "https://via.placeholder.com/80x80"
       },
 
       {
@@ -82,7 +86,8 @@ export function fetchShopProducts() {
         title: "Hummingbird",
         description: "The Hummingbird style poncho",
         price: 24.99,
-        belongsTo: [0, 2]
+        belongsTo: [0, 2],
+        imageUrl: "https://via.placeholder.com/80x80"
       },
 
       {
@@ -90,7 +95,8 @@ export function fetchShopProducts() {
         title: "Falcon",
         description: "The Falcon style poncho",
         price: 24.99,
-        belongsTo: [0, 2]
+        belongsTo: [0, 2],
+        imageUrl: "https://via.placeholder.com/80x80"
       }
     ]
   };

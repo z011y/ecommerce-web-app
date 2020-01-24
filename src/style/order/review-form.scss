@@ -1,6 +1,18 @@
 .review-form {
+  &__legend {
+    grid-row: legend-s/legend-e;
+    grid-column: 1/-1;
+    border-bottom: 3px solid $light-grey;
+    padding-bottom: 20px;
+  }
   &__products {
     grid-column: 1/-1;
+    grid-row: products-s/products-e;
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 80px);
+    grid-row-gap: 30px;
   }
   &__line {
     grid-column: 1/-1;

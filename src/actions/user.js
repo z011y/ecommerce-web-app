@@ -115,7 +115,8 @@ export function fetchCartProducts() {
           title: "Parrot",
           description: "The Parrot style poncho",
           price: 24.99,
-          belongsTo: [0, 1]
+          belongsTo: [0, 1],
+          imageUrl: "https://via.placeholder.com/80x80"
         },
         quantity: 2
       },
@@ -126,7 +127,8 @@ export function fetchCartProducts() {
           title: "Quetzal",
           description: "The Quetzal style poncho",
           price: 24.99,
-          belongsTo: [0, 3]
+          belongsTo: [0, 3],
+          imageUrl: "https://via.placeholder.com/80x80"
         },
         quantity: 1
       },
@@ -137,7 +139,8 @@ export function fetchCartProducts() {
           title: "Peacock",
           description: "The Peacock style poncho",
           price: 24.99,
-          belongsTo: [0, 1]
+          belongsTo: [0, 1],
+          imageUrl: "https://via.placeholder.com/80x80"
         },
         quantity: 3
       },
@@ -148,7 +151,8 @@ export function fetchCartProducts() {
           title: "Eagle",
           description: "The Eagle style poncho",
           price: 24.99,
-          belongsTo: [0, 2]
+          belongsTo: [0, 2],
+          imageUrl: "https://via.placeholder.com/80x80"
         },
         quantity: 1
       }
