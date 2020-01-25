@@ -31,6 +31,11 @@
 @import "order/review-form";
 @import "order/review-product";
 
+// INFORMATION
+@import "information/payment";
+@import "information/shipping";
+@import "information/info-help";
+
 html {
   font-size: 62.5%; // 1rem is 10px
 }

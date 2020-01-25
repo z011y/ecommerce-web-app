@@ -1,10 +1,14 @@
-.header {
+.header-container {
   grid-row: header-s/header-e;
   grid-column: 1/-1;
-  display: grid;
+  display: flex;
+}
+.header {
+  width: 100%;
+  display: flex;
   align-items: center;
   grid-template-rows: 1fr;
-  grid-template-columns: [img-s] 1fr [img-e links-s] 1fr [links-e];
+  grid-template-columns: 1fr;
   border-bottom: 3px solid $purple;
   box-shadow: 0 2px 20px 0 $light-grey;
 
@@ -17,16 +21,24 @@
     display: grid;
     grid-template-rows: [s] 1fr [e];
     grid-column-gap: 47px;
-
+    margin-top: 12px;
     margin-right: 47px;
     grid-column-gap: 30px;
     grid-column: links-s/links-e;
     grid-row: 1/-1;
+    position: absolute;
+    top: 0;
+    right: 0;
     justify-content: end;
+    align-self: start;
 
     a {
       font-size: 18px;
       font-family: "Paytone One";
+      //HERO
+      background-color: $purple;
+      padding: 10px;
+      color: white;
 
       &:hover {
         cursor: pointer;
@@ -76,5 +88,38 @@
 
   & > * {
     grid-row: s/e;
+  }
+}
+
+// HERO STYLES
+
+.hero {
+  background: url("../../static/assets/0.5x/bird-logo-background.png");
+  background-repeat: round space;
+  background-size: 5%;
+  justify-content: center;
+
+  .banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 540px;
+    height: 270px;
+    background-color: white;
+
+    h1 {
+      font-size: 125px;
+      font-family: "Paytone One";
+      color: $purple;
+      margin-bottom: -30px;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: $blue;
+      font-family: "Paytone One";
+      margin-left: 160px;
+    }
   }
 }

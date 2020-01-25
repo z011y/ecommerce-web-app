@@ -1,0 +1,59 @@
+.shipping {
+  grid-row: content-s/content-e;
+  grid-column: s/e;
+  margin-bottom: 100px;
+
+  &__form {
+    display: grid;
+    grid-template-rows:
+      [name-s] 64px [name-e] 35px [address-s] 64px [address-e city-s] 64px [city-e state-zip-s] 64px [state-zip-e] minmax(
+        20px,
+        81px
+      )
+      [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+
+    grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e use-this-address-s] 1fr [use-this-address-e] 1fr;
+  }
+}
+
+.shipping-form {
+  &__name {
+    grid-row: name-s/name-e;
+    grid-column: 1/-1;
+  }
+  &__address {
+    grid-row: address-s/address-e;
+    grid-column: 1/-1;
+  }
+  &__city {
+    grid-row: city-s/city-e;
+    grid-column: 1/-1;
+  }
+  &__state,
+  &__zipcode {
+    grid-row: state-zip-s/state-zip-e;
+    grid-column: back-s;
+    input {
+      width: 200px;
+    }
+  }
+
+  &__zipcode {
+    transform: translateX(226px);
+  }
+
+  &__line {
+    grid-row: line-s/line-e;
+    border-top: 3px solid $light-grey;
+    margin-bottom: 26px;
+    grid-column: 1/-1;
+  }
+  &__back {
+    grid-row: buttons-s/buttons-e;
+    grid-column: back-s/back-e;
+  }
+  &__use-this-address {
+    grid-row: buttons-s/buttons-e;
+    grid-column: use-this-address-s/use-this-address-e;
+  }
+}

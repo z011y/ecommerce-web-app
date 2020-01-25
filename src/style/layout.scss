@@ -1,5 +1,11 @@
-.layout {
+.site-layout {
   display: grid;
   grid-template-rows: [header-s] 75px [header-e navbar-s] 50px [navbar-e content-s] 1fr [content-e];
+  grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-rows: [header-s] 450px [header-e navbar-s] 50px [navbar-e content-s] 1fr [content-e];
   grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
 }

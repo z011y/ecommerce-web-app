@@ -1,0 +1,23 @@
+.underlined-title {
+  font-size: 14px;
+  font-weight: 700;
+  border-button: 3px solid $light-grey;
+}
+
+.info-title {
+  &__title {
+    font-size: 14px;
+  }
+  &__value {
+    color: $purple;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.info-title-purple {
+  &__title {
+    font-weight: 14px;
+    color: $purple;
+  }
+}
