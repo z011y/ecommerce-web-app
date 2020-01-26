@@ -1,17 +1,26 @@
 .underlined-title {
   font-size: 14px;
   font-weight: 700;
-  border-button: 3px solid $light-grey;
+  border-bottom: 3px solid $light-grey;
 }
 
 .info-title {
+  display: grid;
+  grid-template-rows: [s] 1fr [e];
+  grid-template-columns: [s] 1fr [m] 1fr [e];
+  align-items: center;
   &__title {
+    grid-column: s/m;
+    grid-row: s/e;
     font-size: 14px;
   }
   &__value {
+    grid-column: m/e;
+    grid-row: s/e;
     color: $purple;
     font-weight: 700;
     font-size: 18px;
+    justify-self: end;
   }
 }
 
@@ -20,4 +29,11 @@
     font-weight: 14px;
     color: $purple;
   }
+}
+
+.order-summary {
+  width: 240px;
+  display: grid;
+  grid-template-rows: 40px 24px 24px 46px;
+  grid-row-gap: 10px;
 }
