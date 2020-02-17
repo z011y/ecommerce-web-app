@@ -18,7 +18,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header-container">
-        {location.pathname === "/shop" ? (
+        {location.pathname === "/" ? (
           <div className="hero header">
             <div className="banner-img">
               <h1>Bird</h1>

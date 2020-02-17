@@ -30,7 +30,7 @@ class ReviewForm extends Component {
         <Field
           className="review-form__back"
           component={FormButton}
-          onClick={() => history.push("/shop")}
+          onClick={() => history.push("/")}
           type="button"
           title="Back"
           name="back"

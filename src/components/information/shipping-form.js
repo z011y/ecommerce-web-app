@@ -81,7 +81,7 @@ class ShippingForm extends Component {
         <Field
           className="shipping-form__back"
           component={FormButton}
-          onClick={() => history.push("/shop")}
+          onClick={() => history.push("/")}
           type="button"
           title="Back"
           name="back"

@@ -7,6 +7,8 @@
   grid-template-columns: [s] minmax(100px, 1035px) [e];
   justify-content: center;
 
+  margin-bottom: 100px;
+
   &__search-bar {
     grid-row: search-bar-s/search-bar-e;
     grid-column: s/e;

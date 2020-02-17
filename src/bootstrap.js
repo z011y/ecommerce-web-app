@@ -33,11 +33,10 @@ function main() {
       <Router history={history}>
         <Layout>
           <Switch>
-            <Route path="/" exact component={SignIn} />
             <Route path="/signin" exact component={SignIn} />
             <Route path="/signup" exact component={SignUp} />
             <Route path="/account" exact component={Account} />
-            <Route path="/shop" exact component={Shop} />
+            <Route path="/" exact component={Shop} />
             <Route path="/order/review" exact component={Review} />
             <Route path="/information/address" exact component={Shipping} />
             <Route path="/information/payment" exact component={Payment} />

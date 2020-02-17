@@ -26,7 +26,7 @@
 
   &__expiration,
   &__ccv {
-    grid-row: expiration-ccv-e/expiration-ccv-e;
+    grid-row: expiration-ccv-s/expiration-ccv-e;
     grid-column: back-s;
     input {
       width: 200px;
@@ -55,5 +55,35 @@
     grid-row: name-s;
     grid-column: pay-complete-e/-1;
     justify-self: end;
+  }
+  &__shipping-info {
+    grid-row: name-s;
+    grid-column: pay-complete-e/-1;
+    justify-self: end;
+    transform: translateY(180px);
+  }
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.shipping-info {
+  width: 240px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24px 24px 24px;
+  grid-row-gap: 10px;
+
+  & > * {
+    grid-column: 1/-1;
+  }
+
+  &__title {
+  }
+  &__name {
+  }
+  &__address {
   }
 }

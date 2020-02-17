@@ -12,7 +12,7 @@ class Account extends Component {
       {
         _id: 0,
         title: "Shop",
-        path: "/shop"
+        path: "/"
       },
       {
         _id: 1,

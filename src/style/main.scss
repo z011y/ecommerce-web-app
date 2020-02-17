@@ -5,6 +5,7 @@
 @import "page-title";
 @import "form-fields";
 @import "details";
+@import "footer";
 
 // AUTH
 @import "auth/signin";
@@ -60,7 +61,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 
   ::selection {
-    background-color: $blue;
+    background-color: #e1bee7;
   }
 }
 

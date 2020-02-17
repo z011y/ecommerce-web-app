@@ -13,12 +13,12 @@ class Shop extends Component {
       {
         _id: 0,
         title: "Shop",
-        path: "/shop"
+        path: "/"
       },
       {
         _id: 1,
-        title: "Logout",
-        path: "/"
+        title: "Login",
+        path: "/signin"
       }
     ];
     this.props.setHeaderLinks(headerLinks);
@@ -67,7 +67,7 @@ class Shop extends Component {
         <CartButton
           onClick={this.handleToggleCart}
           className="shop__cart-button"
-          icon={"shopping-cart"}
+          icon={"shopping-bag"}
         />
       </div>
     );
